@@ -1,98 +1,108 @@
 # Prompt Blueprint
 
-Use the full structure for image editing. Delete sections that are unnecessary rather than filling them with generic content.
+Use only the sections needed. Delete unnecessary modules instead of filling the image with generic UI.
 
-## Full edit template
+## Adaptive edit template
 
-```text
 Edit the supplied image as the direct master reference.
 
 [SOURCE LOCK]
-Preserve the original composition, camera position, lens/perspective, horizon,
-major architecture, object placement, occlusion, source lighting, and overall
-scene identity. Keep most of the original photograph recognizable.
+Preserve the original composition, camera position, lens/perspective, horizon, major architecture or furniture, object placement, occlusion, source lighting, and scene identity.
 
 [DEPTH TRANSITION]
-Build a clear depth-based Digital Life transition.
-The nearest selected object(s) should be the most computational/model-like.
-The midground should mix model and rendered reality.
-The background should remain primarily photographic.
-The transition must be continuous rather than a hard split.
+Make the nearest selected object(s) the most computational/model-like.
+Use a continuous progression:
+RAW MODEL → EDGE / WIREFRAME → RENDER → REALITY.
+Foreground can be strongly virtual; background should remain mostly photographic.
 
 [FOREGROUND MODEL]
-Render the closest selected object as a Rhino / SketchUp / CAD viewport model:
-pale clay or untextured neutral surfaces, smooth or planar modeling logic,
-strong outer contour and feature-edge lines, sparse internal construction lines,
-subtle AO/contact shadows, and optional selective transparency.
-It must feel like an editable model still open inside design software, not a
-neon hologram and not merely a dense wireframe overlay.
+Render the closest selected object as a Rhino / SketchUp / CAD viewport object:
+pale clay or untextured surfaces, strong outer contour and feature-edge lines,
+sparse construction geometry, optional X-ray, and enough AO/contact shadow to remain anchored in the real scene.
 
-[MODEL → REALITY]
-Let the foreground model gradually regain material, reflections, texture, and
-photographic detail toward the midground, following:
-RAW MODEL → EDGE/WIREFRAME → RENDER → REALITY.
-Use partial x-ray or wireframe only as transitional accents.
+[INTERFACE MODE]
+Choose one:
+A) restrained editorial / instrument UI
+B) immersive first-person AR HUD
+C) adaptive hybrid
 
-[INFORMATION LAYER]
-Add only a few restrained industrial-design annotations inspired by engineering
-drawings, architectural notation, transit information, Braun-like information
-design, and scientific instruments. Use thin leader lines, circles, crosshairs,
-small boxes, object IDs, dimensions, routes, directions, distances, or other
-scene-specific data. Use small monospaced / DIN-like technical typography.
+If B or C, use an original high-end sci-fi first-person interface language with clear mission hierarchy, spatial navigation, reticles, and modular status panels. It may evoke the general UI experience of premium games but must not copy exact branded layouts, icons, logos, or proprietary assets.
 
-[SEMANTIC TEXT]
-Every visible word must provide contextual value. Do not add generic futuristic
-copy such as SCAN, SCANNING, VIRTUAL, REALITY, FUTURE, DIGITAL, AI, XR,
-METAVERSE, SYSTEM ONLINE, or ANALYZING merely for style.
+[MISSION PANEL]
+Do not use a generic DIGITAL LIFE title.
+Create a contextual task panel based on visible content.
+Use 2–4 tasks, one highlighted active task, and larger readable typography.
+Contextual verbs such as SCAN, IDENTIFY, INSPECT, ROUTE, COMPARE, or SYNC are allowed only when tied to a specific object or goal.
+
+[MINIMAP]
+If the scene benefits from spatial navigation, add one corner minimap / floor map / local map.
+Use a schematic scene-derived plan, a viewer marker, one active target, and only a few contextual markers.
+Do not fake precise geography when it is unknown.
+
+[ANNOTATIONS]
+Use 3–6 important callouts.
+Make the key leader lines medium-to-bold with clean circular nodes.
+Use finer secondary guides and low-contrast grids.
+Avoid a field of equally thin overlapping lines.
 
 [HERO TYPOGRAPHY]
-Use no more than one major typographic intervention, and only if a meaningful
-place/building/project/route name is available. Integrate it into a suitable
-building façade, wall, billboard, glass plane, screen, or transport surface and
-match the source perspective exactly. Do not put large typography on the road
-unless explicitly requested. If there is no meaningful text, omit the hero type.
+Use at most one major typography intervention.
+Attach it to a believable scene surface: façade, wall, glazing, tabletop, floor,
+screen, product plane, transport surface, or other perspective carrier.
+Use scene-specific wording.
+
+Give the hero type AR projection depth:
+- slight offset above the carrier plane
+- soft contact / projection shadow
+- subtle luminous edge
+- localized RGB split
+- short motion ghost / temporal trail
+- occasional local occlusion
+
+It should feel anchored and hovering, not simply printed.
 
 [GLITCH]
-Use subtle localized RGB separation, short horizontal tearing, frame offset,
-pixel fragmentation, or scanline breaks only where photographic reality and
-digital geometry intersect. Keep glitch to small portions of the frame and do
-not apply it as a full-image filter.
+Use localized RGB separation, short tearing, scanline breaks, frame offsets,
+pixel fragments, or motion ghosting mainly where the model, UI, hero type, and physical reality intersect.
 
-[STYLE BALANCE]
-The image should first read as contemporary photography, then reveal the CAD
-model layer, then the information graphics. Keep approximately 60–70% visual
-weight photography, 20–30% model, and 10–15% graphic/glitch.
+[READABILITY]
+Make task titles and primary labels large enough to read at final output size.
+Prefer fewer strong UI elements over many tiny ones.
 
 [NEGATIVE]
-No generic cyberpunk takeover, no purple/cyan neon grade, no game HUD, no
-floating hologram panels, no full-scene wireframe, no meaningless telemetry,
-no repeated slogans, no major road typography, no new sci-fi props, and no
-unrequested redesign of the original scene.
+No full-scene cyberpunk recolor, no decorative microtext wallpaper, no multiple minimaps,
+no exact copy of a known game interface, no meaningless FUTURE / METAVERSE / DIGITAL CITY slogans,
+no full-scene wireframe, and no unrequested redesign of the source.
 
-Overall theme: DIGITAL LIFE / 数字人生.
-Reality is not replaced by a future world; ordinary reality is quietly becoming
-editable, measurable, and computational.
-```
+Overall theme:
+ordinary reality is becoming editable, measurable, navigable, and computational.
 
-## Compact template
+## Compact immersive template
 
-```text
-Preserve the supplied photograph and its exact composition. Transform it into
-Digital Life: a depth-based transition where the closest selected objects become
-pale Rhino/SketchUp-style raw models with bold modeling edges, then gradually
-blend through sparse wireframe/x-ray and rendered materials back into photographic
-reality in the background. Add a few meaningful engineering-style annotations
-with thin leaders and monospaced type. Use at most one contextual large type
-intervention on an architectural surface, never generic road slogans. Add only
-localized glitch at model/reality seams. Keep the photograph dominant and avoid
-cyberpunk neon, game HUD clutter, generic techno-copy, and full-scene wireframe.
-```
+Preserve the supplied photograph and exact composition. Apply the Digital Life depth grammar:
+nearest objects become Rhino/SketchUp-style clay models with bold modeling edges,
+then fade through sparse wireframe and rendered materials back into photographic reality.
+
+Add a clean first-person AR interface with one contextual objective panel,
+an optional corner minimap, a few larger readable status labels, 3–6 decisive callouts
+with thicker primary leaders, and one perspective-bound hero type zone.
+Make the hero type slightly hover above its real surface using a soft projected shadow,
+subtle glow, RGB split, and short motion ghosting.
+
+Keep the UI original, source-led, spatial, and selective. Avoid tiny clutter,
+generic future slogans, exact game-HUD imitation, and full-scene neon takeover.
+
+## Restrained template
+
+Preserve the source photograph. Make the closest selected object a pale CAD / Rhino / SketchUp
+raw model with bold edges, then gradually return to reality with depth.
+Add only a few meaningful engineering-style annotations, one optional perspective-bound hero type,
+and localized glitch at model/reality seams. No mission panel or minimap unless requested.
 
 ## Follow-up patch template
 
-```text
-Use the latest approved image as the master. Change only: [USER REQUEST].
-Lock all unmentioned composition, camera, object placement, model/reality
-transition, typography, annotation density, colors, lighting, and glitch pattern.
-Do not rebuild or beautify unrelated regions.
-```
+Use the latest approved image as the master.
+Change only: [USER REQUEST].
+Lock all unmentioned composition, camera, object placement, model/reality transition,
+mission panel, minimap, typography, line hierarchy, colors, lighting, and glitch pattern.
+Do not rebuild unrelated regions.

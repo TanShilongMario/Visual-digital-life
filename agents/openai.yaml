@@ -1,4 +1,4 @@
 interface:
   display_name: "Digital Life Visual"
-  short_description: "Blend real photos with CAD, AR, and poster layers"
-  default_prompt: "Use $digital-life-visual to transform this image into the Digital Life visual system while preserving its source composition and using a depth-based CAD-model-to-reality transition."
+  short_description: "Turn real photos into CAD + AR + first-person digital-life scenes"
+  default_prompt: "Use $digital-life-visual on this image. Preserve the source composition, apply a depth-based CAD-model-to-reality transition, then choose an adaptive UI mode with contextual objectives, optional minimap, readable callouts, and one perspective-bound AR typography zone when meaningful."

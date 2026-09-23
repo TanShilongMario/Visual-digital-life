@@ -2,15 +2,17 @@
 
 ## 1. Concept
 
-Digital Life is not a science-fiction skin. It treats ordinary reality as something partially exposed to computation: measurable, editable, modeled, indexed, and occasionally unstable.
+Digital Life treats ordinary reality as something partially exposed to computation: measurable, editable, modeled, indexed, navigable, and occasionally unstable.
 
-The visual tension comes from **different ontological states occupying one photograph**:
+The image may contain several ontological states:
 
 1. photographic reality
 2. editable 3D model
 3. technical representation
-4. information layer
-5. digital failure / glitch
+4. object understanding
+5. first-person UI / mission state
+6. spatial map / route state
+7. digital failure / glitch
 
 Do not make every object pass through every state.
 
@@ -21,117 +23,217 @@ Do not make every object pass through every state.
 Best candidates:
 
 - cars / bicycles / furniture / products
+- cups / tools / devices / foreground props
 - rails, barriers, street hardware
 - architectural fragments close to camera
-- foreground props with clear geometry
 
 Treatment:
 
 - pale clay or source-tinted neutral surface
 - bold silhouette and crease edges
 - sparse internal modeling lines
-- smooth Rhino/NURBS or simple SketchUp planar character
-- AO/contact shadow retained enough to anchor it in the scene
-- optional light transparency revealing simple internal volumes
-
-A foreground model should still occupy the physical scene. It must cast/receive plausible light and respect occlusion.
+- Rhino/NURBS or SketchUp-like massing
+- AO/contact shadow
+- optional transparency revealing simple internal volumes
 
 ### Middle field: hybrid rendering
 
-Mix states inside one object or across adjacent objects. Useful methods:
+Useful methods:
 
-- 30–60% material restoration
-- wireframe only on one panel or side
-- partial X-ray window
+- partial material restoration
+- wireframe on one region
+- X-ray window
 - fading edge display
-- visible registration points / bounding corners
-- subtle rendered-to-photo gradient
+- registration points
+- bounding corners
+- subtle render-to-photo gradient
 
-### Far field: recognition traces
+### Far field: photographic reality
 
-Use almost no clay conversion. Prefer:
+Use:
 
-- edge detection on one building
-- one or two technical labels
-- thin perspective guides
-- subtle geometry ghosting
+- recognition traces
+- sparse markers
+- one or two object labels
+- route / waypoint anchor
+- faint geometry ghosting
 
-## 3. Modeling aesthetics
+## 3. Interface modes
+
+### Editorial mode
+
+Prioritize:
+
+- industrial annotation
+- architectural information graphics
+- product / material data
+- one strong typography zone
+- quiet UI
+
+### Immersive first-person mode
+
+Prioritize:
+
+- contextual objectives
+- larger readable panel titles
+- one minimap or spatial module
+- reticle / bracket around focal target
+- one compact status module
+- stronger but selective luminous accents
+
+### Adaptive hybrid
+
+Use one or two immersive modules inside the editorial depth system.
+
+This is the default.
+
+## 4. Modeling aesthetics
 
 ### Rhino-like
 
 - smooth NURBS surfaces
 - continuous pale body
-- strong naked/feature edges
+- strong naked / feature edges
 - clean technical geometry
 - no dense triangulation
-- object feels designed, not simulated
 
 ### SketchUp-like
 
-- slightly more planar surfaces
+- planar surfaces
 - explicit silhouette edges
-- readable crease/feature lines
+- readable crease lines
 - minimal material complexity
 - architectural massing feel
 
-### CAD/X-ray accent
+### CAD / X-ray accent
 
-Use as a secondary state, not the main foreground look:
+Secondary state only:
 
-- thin white/gray construction lines
+- thin construction lines
 - transparent structural regions
 - section lines
 - sparse control geometry
 
-## 4. Graphic hierarchy
+## 5. Graphic hierarchy
 
-Three scales of graphic language:
+Use four scales:
 
-### A. Hero typography
+A. Mission / objective panel
+0–1 zone. Large enough to read. Contextual.
 
-0–1 zone. Large. Site-specific. Surface-bound. Poster-like.
+B. Hero typography
+0–1 zone. Large. Perspective-bound. AR-attached.
 
-### B. Object annotation
+C. Object annotation
+3–6 important labels.
 
-A few medium labels tied to selected objects.
+D. Micro data
+Optional. Lowest priority.
 
-### C. Micro data
+If A and B both exist, reduce C and D.
 
-Tiny coordinates / IDs / dimensions. Optional texture, never the main event.
+## 6. Line hierarchy
 
-If A exists, reduce B and C.
+Primary callouts:
+- medium-to-bold
+- clear nodes
+- few in number
 
-## 5. Color
+Secondary guides:
+- regular
+- short
 
-Default to source colors. Digital layers should be mostly:
+Micro grids:
+- fine
+- low contrast
 
-- off-white
-- graphite
-- cool gray
-- transparent pale gray
-- occasional source-derived accent
+This hierarchy is essential to avoid clutter.
 
-Small warm/red/cyan registration artifacts are allowed for glitch but should not become a cyberpunk palette.
+## 7. Hero typography as AR object
 
-## 6. Human subjects
+The hero word or phrase should occupy the same space as the real scene.
+
+Use:
+
+- exact perspective fit
+- slight lift from surface
+- contact / projection shadow
+- subtle glow or luminous edge
+- RGB registration split
+- short motion trail
+- small tear or displacement
+- real-object occlusion when appropriate
+
+It should feel projected, tracked, and alive.
+
+## 8. Minimap
+
+Use only when scene structure supports it.
+
+Possible sources:
+
+- room / café layout
+- street block
+- building floor
+- trail / landscape route
+- transit platform
+- exhibition / store layout
+
+When exact geometry is unknown, make the map schematic.
+
+## 9. Color
+
+Default to source colors.
+
+UI can use:
+
+- off-white / white
+- graphite / translucent dark backing
+- one cool accent
+- one warm active accent
+
+Avoid turning the whole image cyan / magenta merely to signal cyberpunk.
+
+## 10. Humans
 
 When people are present:
 
-- preserve identity-relevant visible characteristics and broad action
-- avoid turning all people into anonymous holograms
-- digitize only one local part if helpful: clothing outline, silhouette registration, accessory, bounding marker, skeletal pose hint, or partial clay treatment
-- keep faces readable unless the requested concept specifically obscures them
+- preserve visible identity-relevant characteristics and action
+- do not turn all people into anonymous holograms
+- use one local digital cue if helpful: clothing outline, accessory scan, silhouette bracket, pose hint, partial clay treatment
+- keep faces readable unless the concept specifically obscures them
 
-## 7. Products / interiors / nature
-
-The same grammar works outside cities.
+## 11. Products / interiors / nature
 
 ### Product
-Foreground product can be split into clay CAD + rendered material + real photographed portion. Use dimensions and part labels rather than city telemetry.
 
-### Interior
-Furniture near camera can become SketchUp/Rhino models; room architecture remains photographed. Hero type may sit on a wall only if meaningful.
+Use model state, material data, dimensions, object dossier, and optional task panel.
+
+### Interior / café
+
+Use furniture / product models, table / room / seat identifiers, local minimap, objective list, and surface-bound hero typography.
+
+### City / transport
+
+Use route, block, stop, vehicle IDs, building markers, district names, and optional street minimap.
 
 ### Nature
-Digitize selected rocks, trunks, terrain contours, or man-made objects. Avoid converting organic nature into a generic polygon world. Use contour, survey, point/mesh, or measurement logic sparingly.
+
+Use terrain contour, waypoint, trail, survey, or rock / vegetation measurement logic. Avoid converting the whole landscape into polygons.
+
+## 12. Reference-game influence
+
+High-level inspiration from cinematic first-person sci-fi games is acceptable for:
+
+- mission hierarchy
+- modular UI
+- navigation
+- status feedback
+- scan framing
+- readable spatial overlays
+
+Never copy exact branded visual assets or layouts.
+
+The target is not “a screenshot from a specific game”.
+
+The target is “reality with its own operating system”.

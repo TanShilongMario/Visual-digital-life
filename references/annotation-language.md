@@ -2,73 +2,156 @@
 
 ## Purpose
 
-Annotations should suggest that the scene is being understood by a computational system, while still behaving like serious information design.
+Annotations should make the scene feel computationally understood without becoming unreadable UI confetti.
 
-## Preferred information types
+The system now supports both restrained industrial annotation and stronger first-person mission UI.
 
-Use only when contextually relevant:
+## Hierarchy
 
-- object identifier: `VEH_012`, `BLDG_027`, `OBJ_A14`
-- dimension: `L 4.72 M`, `H 68.0 M`
-- distance: `DIST 4.2 M`
-- direction: `DIR NNE`
-- speed: `8 KM/H`
-- route: `ROUTE 6`, `WESTBOUND`
-- floor or level: `FLOORS 18`, `LEVEL 04`
-- coordinate snippet when geography matters
-- material / component / part code for products
-- camera or spatial reference values when composition benefits
+Use four text levels:
+
+1. Mission / panel title
+2. Primary object label
+3. Metadata
+4. Micro data
+
+Only level 1 should be large. Level 4 is optional.
+
+## Line-weight hierarchy
+
+Do not use one thin weight everywhere.
+
+### Primary leaders
+
+Use for 3–6 important targets.
+
+- medium-to-bold weight
+- simple angular routing
+- clear circle / node at target
+- short enough to read instantly
+- enough spacing from nearby text
+
+### Secondary leaders
+
+Use for less important objects.
+
+- regular weight
+- fewer nodes
+- no decorative complexity
+
+### Micro guides
+
+Use for grids, rulers, construction lines, or perspective helpers.
+
+- fine weight
+- lower contrast
+- never compete with the focal object
+
+## Preferred information
+
+Use when contextually relevant:
+
+- object identifier
+- dimension
+- distance
+- direction
+- speed
+- route
+- floor or level
+- coordinate snippet
+- material / component / part code
+- volume / temperature / state
+- table / room / seat / zone ID
+- confidence or progress when it represents a scene-specific operation
+
+## Mission language
+
+Contextual action verbs are allowed when tied to a specific scene target.
+
+Good:
+
+SCAN HK MILK TEA
+IDENTIFY ICE / STRAW / GLASS
+INSPECT VEHICLE 07
+ROUTE TO EXIT B
+COMPARE MATERIAL A / B
+LOCATE TABLE A3
+
+Weak:
+
+SCANNING...
+SYSTEM ONLINE
+ANALYZING REALITY
+ENTER THE FUTURE
+
+Use 2–4 tasks. Highlight at most one active task.
 
 ## Typography
 
 Prefer:
 
-- monospaced or DIN-like families
-- small caps or uppercase
+- monospaced, DIN-like, grotesk, or technical sans
+- larger panel titles than previous versions
+- readable body text
 - short lines
 - strong alignment
 - generous negative space
-- 1–4 data lines per callout
 
-## Linework
+Avoid microtext soup.
 
-- 1-pixel-like thin leaders
-- simple circles at target points
-- small crosshairs
-- restrained rectangles
-- avoid ornate sci-fi brackets
-- avoid glowing UI borders
+If text cannot be read at the expected output size, remove it or enlarge it.
 
-## Truth vs designed metadata
+## UI panels
 
-When exact factual values are known from the user/source, use them.
+A strong immersive composition may contain:
 
-When exact values are not known but a label is visually useful:
+- one mission panel
+- one minimap
+- one object data panel
+- one status module
 
-- use clearly designed object IDs or approximate neutral metadata
-- keep it small
-- do not present invented values as real-world claims in accompanying prose
-- omit instead of fabricating if the number itself would carry factual importance
+Do not automatically use all four.
 
-## Banned filler
+## Minimap labels
 
-Do not use the following merely as decoration:
+Keep simple:
 
-`SCANNING`, `ANALYZING`, `REALITY`, `VIRTUAL`, `FUTURE`, `AI`, `XR`, `METAVERSE`, `SYSTEM ONLINE`, `TARGET LOCKED`.
+- YOU
+- TARGET
+- EXIT
+- TABLE / ROOM / STOP / PLATFORM
+- COUNTER / ELEVATOR / VEHICLE / WAYPOINT
+
+Use schematic geometry when exact geography is unknown.
 
 ## Hero typography
 
-Good:
+Hero type is not ordinary annotation.
 
-- actual district / station / building / project name
-- event title supplied by user
-- one meaningful code or date central to the project
+Good content:
 
-Weak:
+- actual place / district / station / building / product / dish name
+- project name supplied by user
+- one meaningful route or room identifier
+- concise context-specific phrase
+
+Weak content:
 
 - DIGITAL CITY
 - FUTURE LIFE
-- REAL / VIRTUAL
-- SCAN TRAFFIC
+- VIRTUAL WORLD
+- SYSTEM ONLINE
 
-If only weak options exist, omit hero type.
+Hero type may use stronger glitch, shadow, projection, or ghosting than ordinary labels.
+
+## Truth vs designed metadata
+
+When exact factual values are known, use them.
+
+When they are unknown:
+
+- use clearly designed IDs
+- use approximate neutral metadata only when harmless
+- keep uncertain numbers visually subordinate
+- use schematic spatial panels instead of fake precise maps
+- do not present invented values as factual claims in accompanying prose

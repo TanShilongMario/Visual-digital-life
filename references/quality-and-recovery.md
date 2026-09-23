@@ -2,73 +2,147 @@
 
 ## Gate 1: Source drift
 
-**Failure:** The scene is newly invented or the original camera/composition is lost.
+Failure:
+The scene is newly invented or the original camera/composition is lost.
 
-**Recovery:** Increase source/composition/perspective lock. Remove new architecture and props. Reassert original object positions and occlusion.
+Recovery:
+Increase source/composition/perspective lock. Remove new architecture and props. Reassert original object positions and occlusion.
 
 ## Gate 2: Foreground is only wireframe
 
-**Failure:** The near object looks like a transparent mesh cage rather than a Rhino/SU model.
+Failure:
+The near object looks like a transparent mesh cage rather than a Rhino/SU model.
 
-**Recovery:** Replace dense wireframe with pale solid clay surfaces, stronger outer/crease edges, fewer internal lines, and clearer massing. Keep wireframe only as a transition accent.
+Recovery:
+Replace dense wireframe with pale solid clay surfaces, stronger outer/crease edges, fewer internal lines, and clearer massing.
 
 ## Gate 3: Model looks too photorealistic
 
-**Failure:** Foreground no longer reads as editable CAD.
+Failure:
+Foreground no longer reads as editable CAD.
 
-**Recovery:** Flatten materials, reduce PBR/reflection, simplify shading, increase neutral clay surface, strengthen model edge display, and expose a few construction features.
+Recovery:
+Flatten materials, reduce PBR/reflection, simplify shading, increase neutral clay surface, strengthen model-edge display, expose a few construction features.
 
 ## Gate 4: Hard cut between model and photo
 
-**Failure:** Half the object is model and half is photo with a straight seam.
+Failure:
+Model and photo meet at a straight seam.
 
-**Recovery:** Use multiple intermediate states: clay → edge render → sparse wireframe/x-ray → restored material → photo. Follow object geometry rather than a geometric mask.
+Recovery:
+Use multiple intermediate states:
+clay → edge render → sparse wireframe/X-ray → restored material → photo.
 
-## Gate 5: Too much HUD
+## Gate 5: Digital layer feels too weak
 
-**Failure:** The scene becomes a videogame interface.
+Failure:
+The image looks like a normal photo with tiny annotations.
 
-**Recovery:** Remove 40–70% of labels. Keep only annotations tied to important objects. Shrink boxes and eliminate decorative frames.
+Recovery:
+Add one stronger first-person module:
+- mission panel
+- minimap
+- reticle / scan bracket
+- stronger hero typography
+- more obvious foreground model state
 
-## Gate 6: Meaningless text
+Do not add all of them at once.
 
-**Failure:** Large `SCAN`, `VIRTUAL`, `FUTURE`, or repeated techno phrases appear.
+## Gate 6: HUD is too cluttered
 
-**Recovery:** Delete them. Replace only with known place/building/route/project names or omit typography entirely.
+Failure:
+Many tiny panels, micro lines, and labels compete equally.
 
-## Gate 7: Road typography appears without need
+Recovery:
+Remove 30–60% of UI.
+Keep one dominant corner, one secondary corner, and 3–6 important callouts.
+Enlarge important text.
+Use thicker primary leaders and finer secondary guides.
 
-**Failure:** Poster words are projected onto asphalt by default.
+## Gate 7: Mission list is generic
 
-**Recovery:** Remove road text. If hero type remains useful, move the single meaningful type zone to a façade, wall, billboard, glazing, or transport surface.
+Failure:
+Tasks say things like SYSTEM ONLINE, ENTER FUTURE, ANALYZE WORLD.
 
-## Gate 8: Glitch becomes a filter
+Recovery:
+Rewrite tasks from visible scene content:
+specific object, place, table, route, product, building, person, or waypoint.
 
-**Failure:** RGB split/noise covers the whole image.
+## Gate 8: Minimap invents geography
 
-**Recovery:** Restrict glitch to 5–15% of the image around model/photo seams, object edges, occlusions, or borders. Restore clean photographic areas elsewhere.
+Failure:
+The map looks precise even though the source does not provide exact layout.
 
-## Gate 9: Generic cyberpunk
+Recovery:
+Make it schematic and local.
+Show only viewer, target, and a few nearby scene elements.
+Label it as a local / floor / area map.
 
-**Failure:** Purple/cyan neon, rain, holograms, floating windows, and futuristic props overwhelm the source.
+## Gate 9: Hero typography feels printed
 
-**Recovery:** Return to source palette and lighting. Remove added sci-fi props. Convert interface styling toward engineering/architectural information design.
+Failure:
+Large text is perspective-aligned but flat, like ordinary graphic design pasted onto the image.
 
-## Gate 10: Flat visual hierarchy
+Recovery:
+Add slight surface offset, contact/projected shadow, local luminous edge, subtle RGB split, and short directional motion ghosting. Allow local occlusion.
 
-**Failure:** Every building, person, and vehicle is equally annotated and digitized.
+## Gate 10: Hero typography is meaningless
 
-**Recovery:** Select one foreground hero model, one or two midground hybrid objects, and only faint background traces. Reduce all other overlays.
+Failure:
+Large FUTURE, VIRTUAL, DIGITAL CITY, or other generic techno-copy appears.
+
+Recovery:
+Replace with a scene-specific object, place, route, dish, product, table, room, event, or project name. If no meaningful wording exists, remove hero type.
+
+## Gate 11: Lines are too thin and messy
+
+Failure:
+Everything uses the same hairline weight and overlaps.
+
+Recovery:
+Promote 3–6 important leaders to medium/bold.
+Reduce micro-grid contrast.
+Shorten connector routes.
+Increase label spacing.
+Delete decorative lines.
+
+## Gate 12: Glitch becomes a filter
+
+Failure:
+RGB split/noise covers the whole image.
+
+Recovery:
+Restrict glitch to model/photo seams, hero type, UI attachment points, silhouettes, and borders.
+
+## Gate 13: Exact game imitation
+
+Failure:
+The result reproduces a recognizable game HUD layout, logo, or icon system.
+
+Recovery:
+Keep the high-level first-person information architecture but redesign layout, shapes, typography, icons, colors, and module distribution.
+
+## Gate 14: Flat hierarchy
+
+Failure:
+Every object is equally digitized and annotated.
+
+Recovery:
+Choose one foreground hero model, one or two hybrid secondary objects, one dominant UI area, and one optional hero type zone.
 
 ## Final acceptance test
 
-A successful Digital Life image should answer “yes” to all of these:
+A successful Digital Life image should answer yes to most of these:
 
-1. Would a viewer recognize the source photograph immediately?
-2. Does the closest digital object feel editable rather than holographic?
-3. Can the eye read a clear model-to-reality depth progression?
-4. Does every large word have a contextual reason to exist?
-5. Are the small annotations subordinate to the photograph?
-6. Does glitch mark transitions rather than decorate everything?
-7. Would the result still feel contemporary if all neon were removed?
-8. Does the image feel designed as a poster without becoming a poster pasted over a photo?
+1. Is the source photograph still immediately recognizable?
+2. Does the nearest digital object feel editable rather than merely holographic?
+3. Is there a clear model-to-reality depth progression?
+4. If immersive mode is active, are the mission items contextual and readable?
+5. If a minimap exists, is it useful and clearly schematic?
+6. Are key leader lines stronger than secondary guides?
+7. Does large typography have a contextual reason to exist?
+8. Does hero type feel attached to space through shadow / glow / glitch / ghosting?
+9. Can the viewer find the focal object quickly?
+10. Does glitch mark transitions instead of decorating everything?
+11. Does the UI feel premium and game-like without copying a specific game?
+12. Does the image still read as reality first, system second?
