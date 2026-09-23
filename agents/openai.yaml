@@ -1,0 +1,4 @@
+interface:
+  display_name: "Digital Life Visual"
+  short_description: "Blend real photos with CAD, AR, and poster layers"
+  default_prompt: "Use $digital-life-visual to transform this image into the Digital Life visual system while preserving its source composition and using a depth-based CAD-model-to-reality transition."
